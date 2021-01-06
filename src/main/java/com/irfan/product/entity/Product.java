@@ -1,5 +1,7 @@
 package com.irfan.product.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -37,4 +39,10 @@ public class Product {
 
 	@Column(name = "price", nullable = false)
 	private double price;
+
+	@Column(name = "created_date", nullable = false)
+	private Date createdDate;
+
+	@Column(name = "modified_date", nullable = false)
+	private Date modifiedDate;
 }
